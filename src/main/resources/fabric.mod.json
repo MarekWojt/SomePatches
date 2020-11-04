@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "somepatches",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Some Patches",
+  "description": "Patches some network related stuff in Minecraft. Basically part of the code of RandomPatches but without the config and the dependencies.",
   "authors": [
-    "Me!"
+    "MWojt",
+    "Adrian Syauqi K (icon)"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/MarekWojt/SomePatches",
+    "sources": "https://github.com/MarekWojt/SomePatches"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/somepatches/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "de.hanamicode.somepatches.SomePatchesMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "somepatches.mixins.json"
   ],
 
   "depends": {
