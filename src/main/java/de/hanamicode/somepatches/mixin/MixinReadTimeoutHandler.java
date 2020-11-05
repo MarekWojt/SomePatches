@@ -14,7 +14,7 @@ public class MixinReadTimeoutHandler {
 			target = "io/netty/handler/timeout/ReadTimeoutHandler.<init>" +
 					"(JLjava/util/concurrent/TimeUnit;)V"
 	))
-	public int getTimeout(int timeout) {
+	private static long getTimeout(long timeout) {
 		return timeout == 30 ? Config.getReadTimeout() : timeout;
 	}
 }
